@@ -16,19 +16,21 @@
 </head>
 
 <body>
-        <header class="d-flex justify-content-between align-items-center px-3">
+        <header class="container d-flex justify-content-between align-items-center">
                 <div class="h-100 d-flex align-items-center">
                         <div class="h-100 bg-success">
                                 <img src="img/mobile-logo.png" alt="logo-boolean">
                         </div>
                         <h2 class="d-inline-block">Campo Minato</h2>
                 </div>
-                <button>Play</button> 
-                <select name="difficult" id="difficult">
-                        <option value="100">Easy - 100</option>
-                        <option value="81">Medium - 81</option>
-                        <option value="49">Hard - 49</option>
-                </select>             
+                <div>
+                        <button class="rounded-2 px-2">Play</button> 
+                        <select name="difficulty" id="difficulty" class="rounded-2 px-2">
+                                <option value="100">Easy - 100</option>
+                                <option value="81">Medium - 81</option>
+                                <option value="49">Hard - 49</option>
+                        </select>   
+                </div>          
         </header>
 
         <main class="py-2">
@@ -39,7 +41,7 @@
 
         </main>
 
-        <footer class=" d-flex align-items-center px-3">
+        <footer class="container d-flex align-items-center">
                 <h4>
                         Made with <i class="fa-solid fa-heart"></i> by <a href="">Boolean</a> 
                 </h4>

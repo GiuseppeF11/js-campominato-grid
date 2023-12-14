@@ -12,8 +12,6 @@ img {
 }
 
 button {
-    padding: 2px 30px;
-    border-radius: 20px;
     border: 2px solid grey;
     font-weight: bold;
 }
@@ -43,6 +41,7 @@ main {
     background-color: white;
     cursor: pointer;
 }
+
  /*  BONUS  */
 .cell-100 {
     width: calc(100% / 10);

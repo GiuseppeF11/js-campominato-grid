@@ -9,10 +9,11 @@ const playBtn = document.querySelector('button')
 
 //Quando clicco il play button partirà il ciclo
 playBtn.addEventListener('click', function(){
+    gridContainer.innerHTML = '';
 
 //BONUS
-const select = parseInt(document.getElementById('difficult').value);
-console.log(select +' '+ typeof select)
+const select = parseInt(document.getElementById('difficulty').value);
+console.log('Level '+ select +' '+ typeof select)
 
     //Il ciclo va da 1 a 100 (incluso) e si incrementa di un man mano
     for (let i = 1; i <= select; i++) {
@@ -42,7 +43,7 @@ console.log(select +' '+ typeof select)
         gridContainer.append(cell);
     
         /* Al click della cella si deve:
-            1)stampare l'elemento in console
+            1)stampare l'elemento che ha subito il click in console
             2)aggiungere all'elemento cliccato la classe active (vedi CSS) 
             3)stampare il contenuto dell'elemento in console
         */
@@ -52,7 +53,7 @@ console.log(select +' '+ typeof select)
             console.log(this);
             
             //2)
-            this.classList.toggle('active');
+            this.classList.add('active');
     
             //3)
             console.log(this.innerHTML);
